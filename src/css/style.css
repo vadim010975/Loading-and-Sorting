@@ -1,0 +1,49 @@
+:root {
+  --cell-size: 64px;
+  --board-size: 4;
+}
+
+body {
+  background-color: #000;
+  
+}
+
+.row {
+  color: #fff;
+}
+
+.cell {
+  padding: 5px;
+}
+
+.board-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(var(--board-size), 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+/* .cell {
+  position: relative;
+  background-color: #fff;
+  width: var(--cell-size);
+  height: var(--cell-size);
+} */
+
+.img {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  position: absolute;
+  z-index: 0;
+  background: url('../img/goblin.png');
+  background-size: cover;
+}
+
+
